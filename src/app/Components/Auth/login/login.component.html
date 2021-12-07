@@ -1,0 +1,14 @@
+<div class = "myForm d-flex">
+  <div class = "loginForm w3-animate-top">
+    <div class = "mainInput d-flex flex-column p-4">
+      <h2 class = "text-center">Login Account</h2>
+      <span>{{message}}</span>
+      <input name = "username" (keyup) = "onKey($event)" class = "my-3 p-3" type = "text" placeholder="Enter username"/>
+      <input name = "password" (keyup) = "onKey($event)"  class = "my-3 p-3" type = "password" placeholder="Enter password"/>
+      <button class = "myBtn p-2" (click) = "login()">Login</button>
+    </div>
+  </div>
+  <div class = "decor w3-animate-bottom">
+  </div>
+</div>
+<app-spinner *ngIf="showSpinner"></app-spinner>

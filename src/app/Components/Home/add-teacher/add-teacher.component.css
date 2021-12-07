@@ -1,0 +1,18 @@
+.myBack{
+    background-image: url('https://media.istockphoto.com/photos/teacher-desk-full-of-books-against-a-blackboard-background-whit-copy-picture-id1251272960?k=20&m=1251272960&s=170667a&w=0&h=Tn5qAzjy6HD4d6pUTBjFejcvKEn9BEOjQHI1C1j1Lok=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    padding-top: 4rem;
+}
+
+.myForm{
+    width: 80%;
+    margin: auto auto;
+    background-image: linear-gradient(45deg, rgba(41, 234, 248, 0.5), rgba(248, 217, 42, 0.5));
+}
+
+.addImage{
+    width: 200px;
+    height: 200px;
+}

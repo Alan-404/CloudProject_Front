@@ -1,0 +1,14 @@
+<mat-progress-bar *ngIf = "showProcess" class = "mb-3" mode="buffer"></mat-progress-bar>
+<h1>Danh Sách Người Dùng </h1>
+<hr />
+
+<ul class="list-group">
+    <li *ngFor = 'let user of response' class="list-group-item d-flex">
+        <img [src]="user.avatar"/>
+        <div class="d-flex flex-column mx-3" >
+            <h2>id: {{user.id}}</h2>
+            <h2>username: {{user.username}}</h2>
+        </div>
+        
+    </li>
+</ul>

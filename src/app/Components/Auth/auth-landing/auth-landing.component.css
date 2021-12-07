@@ -1,0 +1,20 @@
+.authBackground{
+    margin: 0,0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://image.freepik.com/free-vector/gradient-dynamic-blue-lines-background_23-2148995756.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.dark-overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 896px) {
+    .authBackground{
+        background-image: url('https://images.pexels.com/photos/3894157/pexels-photo-3894157.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    }
+}

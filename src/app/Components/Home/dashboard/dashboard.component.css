@@ -1,0 +1,46 @@
+img {
+    width: 80vw;
+    height: 60vh;
+}
+
+.intro{
+    background-image: url('https://taomaunhanh.com/wp-content/uploads/2018/06/spkt-hcmute-su-pham-ky-thuat-tphcm-5.jpg');
+    height: 70vh;
+    width: 78vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.showIntro {
+    border-bottom: 555px solid rgba(0, 162, 255,0.7);
+    border-right: 200px solid transparent;
+    height: 0;
+    width: 60%;
+}
+
+.contentIntro{
+    color: white;
+    width: 100%;
+    padding-top: 10rem;
+    padding-left: 2rem;
+    transition: 3s;
+}
+
+h1{
+    font-family: helvetica;
+    font-size: 45px;
+    height: 5rem;
+}
+
+
+
+i{
+    width: 45%;
+    font-size: 50px;
+}
+
+.myLink{
+    cursor: pointer;
+}
+

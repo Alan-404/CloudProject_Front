@@ -1,0 +1,13 @@
+<div class="back text-light">
+    <div class="text-light render d-flex flex-column">
+        <span class="text-warning h3">{{message}}</span>
+        <h1>Subject ID: {{subject.id}}</h1>
+        <div>
+            <h1>Name:</h1>
+            <input (keyup)="getInfor($event)" type="text"  value = {{subject.name}}>
+        </div>
+        <button (click)="editSubject()" type="button" class="btn btn-warning my-4">Submit</button>
+    </div>
+</div>
+
+<app-spinner *ngIf = "this.showSpinner"></app-spinner>

@@ -1,0 +1,53 @@
+<div>
+    <h1>Thêm Khóa Học</h1>
+    <hr />
+    
+    <div class = "d-flex">
+        <div class="w-50 form-floating mx-3 mb-3">
+            <select name = "subject" (change)="getInforOfOption($event)" class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Chọn môn học</option>
+              <option name = "subject" *ngFor="let subject of this.inforPage" value={{subject.id}}>{{subject.name}}</option>
+            </select>
+            <label for="floatingSelect">Tên Môn Học</label>
+        </div>
+
+        <div class="w-50 form-floating mx-3 mb-3">
+            <select name = "teacher" (change)="getInforOfOption($event)" class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Chọn môn học</option>
+              <option name = "teacher" *ngFor="let teacher of this.listTeachers" value={{teacher.id}}>{{teacher.firstName + " " + teacher.middleName + " " + teacher.lastName + " (" + teacher.id + ")"}}</option>
+            </select>
+            <label for="floatingSelect">Giảng Viên Phụ Trách</label>
+        </div>
+    </div>
+
+    <div class = "mx-3 d-flex w3-animate-left justify-content-between">
+        <div class="w-25 form-floating myLession mb-3">
+            <select name = "lession" (change)="getInforOfOption($event)" class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Chọn Tiết Học</option>
+              <option *ngFor="let lession of this.arrLessions" value={{lession}}>{{lession}}</option>
+            </select>
+            <label for="floatingSelect">Tiết học</label>
+        </div>
+    </div>
+
+
+    <div class="form-floating mx-3">
+        <textarea (keyup)="getInfor($event)" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+        <label for="floatingTextarea2">Mã Số Sinh Viên</label>
+    </div>
+
+
+    <button (click)="addGroup()" type="button" class="btn btn-secondary m-3">Thêm Khóa Học</button>
+
+    <h2>List Students</h2>
+    <ul *ngFor="let student of allStudents" class="list-group">
+        <li class="list-group-item">
+            <h3>Student Id: {{student.id}}</h3>
+            <h3>Fullname: {{student.firstName + " " + student.middleName + " " +  student.lastName}}</h3>
+        </li>
+    </ul>
+    
+
+</div>
+
+<app-spinner *ngIf = "this.showSpinner"></app-spinner>

@@ -1,0 +1,31 @@
+*{
+    font-size: 30px;
+}
+
+.back {
+    width: 70vw;
+    height: 80vh;
+    background-image: url('https://images.all-free-download.com/images/graphiclarge/blackboard_books_pencil_vector_294419.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position:absolute;
+}
+
+.render{
+    width:80vw ;
+    margin: auto auto;
+    margin-top: 30vh;
+    margin-left: 15vw;
+}
+
+input {
+    color: white;
+    width: 30vw;
+    background: none;
+    outline: none;
+    border: 0;
+}
+
+button{
+    width: 10vw;
+}

@@ -1,0 +1,53 @@
+.contentAdmin{
+    width: 70vw;
+}
+
+.myNumber{
+    font-size: 30px;
+    background-color: white;
+}
+
+.vl {
+    border-left: 6px solid green;
+    height: 100px;
+}
+
+h1{
+    font-weight: bold;
+}
+
+.digitalClock{
+    width: 40%;
+    margin: auto auto;
+    background-color: rgb(143, 207, 233);
+    height: 15vh;
+    border: 10px solid brown;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.digitalTime{
+    width: 80%;
+    margin: auto auto;
+}
+
+.myLayout{
+    border-radius: 25px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.myBtn{
+    background-color: rgb(28, 120, 196);
+    border-radius: 25px;
+    color: white;
+    border: 0;
+}
+
+.myContentAdmin{
+    width: 75vw;
+}

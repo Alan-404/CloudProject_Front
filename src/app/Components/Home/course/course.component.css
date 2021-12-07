@@ -1,0 +1,18 @@
+.myCourse{
+    background-color: white;
+    width: 76vw;
+}
+
+pre{
+    white-space: pre-wrap;
+    font-family: helvetica;
+}
+
+input{
+    width: 50vw;
+}
+
+.mySearch{
+    width: 20vw;
+    border-radius: 25px;
+}

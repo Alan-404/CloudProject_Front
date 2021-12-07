@@ -1,0 +1,12 @@
+.card{
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 2rem;
+    width: 20%;
+}
+
+.thumnail{
+    width: 100%;
+    height: 80%;
+}
+

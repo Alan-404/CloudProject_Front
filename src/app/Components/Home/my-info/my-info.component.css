@@ -1,0 +1,45 @@
+.avatar{
+    width: 200px;
+    height: 200px;
+}
+i{
+    cursor: pointer;
+}
+
+.content{
+    color: rgb(163, 159, 159)
+}
+
+.myNotice{
+    width: 25vw;
+}
+
+.date{
+    color:rgb(131, 129, 129);
+}
+
+.teach{
+    color: violet;
+}
+
+.facebook{
+    width: 5vw;
+    height: 10vh;
+    background-color: blue;
+    border-radius: 50px;
+}
+
+.gmail{
+    width: 5vw;
+    height: 10vh;
+    background-color: red;
+    border-radius: 50px;
+}
+
+.social{
+    font-size: 30px;
+}
+
+.myInfo{
+    width: 50vw;
+}

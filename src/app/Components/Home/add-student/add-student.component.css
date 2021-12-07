@@ -1,0 +1,20 @@
+.myBack{
+    background-image: url('https://image.freepik.com/free-vector/watercolor-back-school-background-with-white-space_52683-41450.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+.myForm{
+    
+    width: 80%;
+    background-image: linear-gradient(90deg, rgba(83, 195, 240, 0.5), rgba(66, 202, 168, 0.5));
+    margin: auto auto;
+}
+
+.addImage{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}

@@ -1,0 +1,60 @@
+<div>
+  <div class = "d-flex">
+    <button routerLink = "mainPage" class = "mx-3 myBtn px-3">
+      Dashboard
+    </button>
+
+    <div>
+      <a routerLink="list-users" class="myBtn mx-3 btn btn-secondary" type="button">
+        Users
+      </a>
+    </div>
+
+
+    <div class="dropdown">
+      <button class="myBtn mx-3 btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Student
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" routerLink = "insertStudent">Add Student</a></li>
+        <li><a class="dropdown-item" routerLink="list-students">List Student</a></li>
+      </ul>
+    </div>
+
+    <div class="dropdown">
+      <button class="myBtn mx-3 btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Teacher
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" routerLink = "add-teacher">Add Teacher</a></li>
+        <li><a class="dropdown-item" routerLink="list-teachers">List Teachers</a></li>
+      </ul>
+    </div>
+
+
+    <div class="dropdown">
+      <button class="myBtn mx-3 btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Subject
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" routerLink = "add-subject">Add Subject</a></li>
+        <li><a class="dropdown-item" routerLink="list-subjects">List Subjects</a></li>
+      </ul>
+    </div>
+
+    <div class="dropdown">
+      <button class="myBtn mx-3 btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Group
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" routerLink = "add-course">Add Group</a></li>
+        <li><a class="dropdown-item" routerLink = "list-groups">List Group</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <div class = "m-3 myContentAdmin p-3 bg-light">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

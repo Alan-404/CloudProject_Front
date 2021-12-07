@@ -1,0 +1,49 @@
+<div class="container p-5 w-100">
+    <div>
+        <h1>Thông Tin Sinh Viên</h1>
+        <span class = "h4 text-success">{{this.message}}</span>
+        <hr />
+        <div class="input-group mb-3">
+            <span class="input-group-text">ID</span>
+            <input readonly type="text" aria-label="First name" class="form-control" value = {{this.inforPage.id}}>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Student ID</span>
+            <input readonly type="text" aria-label="First name" class="form-control" value = {{this.inforUser.username}}>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Full Name</span>
+            <input (keyup)="getInfor($event)" name = "firstName" type="text" aria-label="First name" class="form-control" value = {{this.inforPage.firstName}}>
+            <input (keyup)="getInfor($event)" name = "middleName" type="text" aria-label="Last name" class="form-control" value = {{this.inforPage.middleName}}>
+            <input (keyup)="getInfor($event)" name = "lastName" type="text" aria-label="Last name" class="form-control" value = {{this.inforPage.lastName}}>
+        </div>
+
+        
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Gmail</span>
+            <input (keyup)="getInfor($event)" name = "gmail" type="text" aria-label="First name" class="form-control" value = {{this.inforPage.gmail}}>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Address</span>
+            <input (keyup)="getInfor($event)" name = "address" type="text" aria-label="First name" class="form-control" value = {{this.inforPage.address}}>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Phone</span>
+            <input (keyup)="getInfor($event)" name = "phone" type="text" aria-label="First name" class="form-control" value = {{this.inforPage.phone}}>
+        </div>
+        <div class="my-4 d-flex flex-column">
+            <img class="avatar" src="{{this.imageShow}}"/>
+            <input (change)="uploadImage($event)" class="my-2" type ="file" accept="*.jpg.png"/>
+        </div>
+        
+        <button (click)="editStudent()" class = "btn bg-success text-light">Edit Profile Student</button>
+    </div>
+
+</div>
+
+<app-spinner *ngIf = "this.showSpinner"></app-spinner>
+

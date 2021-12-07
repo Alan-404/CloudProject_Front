@@ -1,0 +1,71 @@
+
+
+
+.myBackground{
+    background-image: url('https://www.talentlms.com/blog/wp-content/uploads/2016/03/TLMS_20210122_1200x628_A.png');
+}
+
+.myForm{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 60vh;
+    width: 70vw;
+    margin: auto auto;
+    margin-top: 15vh;
+}
+
+.loginForm{
+    height: 100%;
+    width: 50%;
+}
+
+.decor{
+    display: block;
+    background-image: url('https://www.talentlms.com/blog/wp-content/uploads/2016/03/TLMS_20210122_1200x628_A.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+}
+
+.mainInput{
+    width: 80%;
+    margin: auto auto;
+    margin-top: 15%;
+    background-image: linear-gradient(-45deg, rgb(0, 195, 255), white);
+    box-shadow: 5px 10px #888888;
+}
+
+.myBtn{
+    width: 50%;
+    margin: auto auto;
+}
+
+input{
+    background: none;
+    border: 1px solid orange;  
+}
+
+button{
+    background-color: rgb(238, 238, 51);
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.mySpinner{
+    position:absolute;
+    top: 0;
+}
+
+
+@media screen and (max-width: 968px) {
+      .decor{
+          display: none;
+      }
+      .myForm{
+          margin-top: 5rem;
+      }
+      .loginForm{
+          width: 100%;
+      }
+
+}

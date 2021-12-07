@@ -1,0 +1,28 @@
+<mat-progress-bar *ngIf = "showProcess" class = "mb-3" mode="buffer"></mat-progress-bar>
+
+<h1 class = "mt-4">Danh Sách Sinh Viên: {{this.class}}</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Student Name</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Address</th>
+        <th scope="col">Gmail</th>
+        <th scope="col">Sửa/Xóa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor = "let student of allStudents; let i = index" class = "p-3">
+        <th>{{i+1}}</th>
+        <td>{{student.firstName + ' ' + student.middleName + ' ' + student.lastName}}</td>
+        <td>{{student.phone}}</td>
+        <td>{{student.address}}</td>
+        <td>{{student.gmail}}</td>
+        <td>
+          <button (click)="editStudent(student.id)" class = "myBtn mx-1 bg-success text-light"><i class="fas fa-edit"></i></button>
+          <button (click)="deleteStudent(student.id)" class = "myBtn mx-1 bg-danger"><i class="fas fa-ban"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

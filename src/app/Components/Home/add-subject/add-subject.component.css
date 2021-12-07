@@ -1,0 +1,25 @@
+.myBackGround{
+    background-image: url('https://www.chetu.com/img/e-learning/lms/sliderbg/learning-management-system-hero-shot.jpg');
+    width: 75vw;
+    height: 80vh;
+    background-size: 100%;
+    position:absolute;
+}
+
+.addSubject{
+    width: 80%;
+    margin: auto auto;
+    margin-top: 10%;
+    border: 1px solid orange;
+    background-color: rgba(241, 241, 28, 0.4);
+}
+
+img {
+    width: 30vw;
+    height: 50vh;
+}
+
+.myForm{
+    width: 80%;
+    margin: auto auto;
+}

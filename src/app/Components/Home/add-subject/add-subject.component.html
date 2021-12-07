@@ -1,0 +1,28 @@
+<div *ngIf="showProcess">
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+<div class = "myBackGround w3-animate-right">
+    <div class = "addSubject text-light">
+        
+        <div class ="d-flex">
+            
+            
+            <div class = "myDeco">
+                <img src = "https://img.freepik.com/free-vector/cartoon-empty-elementary-high-school-college-university-classroom-background_1441-1550.jpg?size=626&ext=jpg"/>
+            </div>
+
+            <div class = "myForm p-4">
+                <h1>Thêm Môn Học</h1>
+                <span class="h3 text-success mb-3">{{message}}</span>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Tên Môn Học</span>
+                    <input (keyup)="getInfor($event)" name = "subject" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <button (click)="addSubject()" class = "p-2 bg-info text-light">Add Subject</button>
+            </div>
+        </div>
+        
+    </div>
+</div>
+

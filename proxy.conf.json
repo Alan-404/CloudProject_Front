@@ -1,0 +1,93 @@
+{
+    "/login": {
+      "target": "https://otf95jjwr3.execute-api.us-east-1.amazonaws.com/dev/user/login",
+      "secure": false,
+      "pathRewrite": {
+        "^/login": ""
+      },
+      "changeOrigin": true
+    },
+
+
+
+    "/studentToken": {
+      "target": "https://otf95jjwr3.execute-api.us-east-1.amazonaws.com/dev/student/token",
+      "secure": false,
+      "pathRewrite": {
+        "^/studentToken": ""
+      },
+      "changeOrigin": true
+    },
+
+
+    
+    "/studentApi": {
+      "target": "https://otf95jjwr3.execute-api.us-east-1.amazonaws.com/dev/student",
+      "secure": false,
+      "pathRewrite": {
+        "^/studentApi": ""
+      },
+      "changeOrigin": true
+    },
+
+
+    "/getStudent/*": {
+      "target": "https://otf95jjwr3.execute-api.us-east-1.amazonaws.com/dev/student",
+      "secure": false,
+      "pathRewrite": {
+        "^/getStudent": "",
+        "^/id": "/jsonresponse.json"
+      },
+      "changeOrigin": true
+    },
+
+    "/teacherApi": {
+      "target": "https://otf95jjwr3.execute-api.us-east-1.amazonaws.com/dev/teacher",
+      "secure": false,
+      "pathRewrite": {
+        "^/teacherApi": ""
+      },
+      "changeOrigin": true
+    },
+
+    "/getTeacher/*": {
+      "target": "https://otf95jjwr3.execute-api.us-east-1.amazonaws.com/dev/teacher",
+      "secure": false,
+      "pathRewrite": {
+        "^/getTeacher": "",
+        "^/id": "/jsonresponse.json"
+      },
+      "changeOrigin": true
+    },
+
+
+    "/addUser": {
+      "target": "https://otf95jjwr3.execute-api.us-east-1.amazonaws.com/dev/user",
+      "secure": false,
+      "pathRewrite": {
+        "^/addUser": ""
+      },
+      "changeOrigin": true
+    },
+
+
+
+    "/subjectApi": {
+      "target": "https://otf95jjwr3.execute-api.us-east-1.amazonaws.com/dev/subject",
+      "secure": false,
+      "pathRewrite": {
+        "^/subjectApi": ""
+      },
+      "changeOrigin": true
+    },
+
+    "/groupApi": {
+      "target": "https://otf95jjwr3.execute-api.us-east-1.amazonaws.com/dev/group",
+      "secure": false,
+      "pathRewrite": {
+        "^/groupApi": ""
+      },
+      "changeOrigin": true
+    }
+
+}

@@ -1,0 +1,35 @@
+<div class = "myHeader">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid myContentHeader">
+      <div class = "d-flex mt-3">
+        <img class = "mx-2" src = "https://haitrieu.com/wp-content/uploads/2021/09/Logo-DH-Su-Pham-Ky-Thuat-TP-Ho-Chi-Minh-HCMUTE.png"/>
+        <h1 class = " pt-1 ml-3">Đại Học Sư Phạm Kỹ Thuật TP.Hồ Chí Minh</h1>
+        <h2 class = "pt-1">Trang Quản Lý Sinh Viên</h2>
+      </div>
+      <input class = "p-2 mySearch w-25" type = "text" placeholder="Search..."/>
+
+      <div>
+        <i class="fa fa-envelope mx-3" aria-hidden="true"></i>
+      </div>
+
+      <div class = "d-flex">
+        <img class = "picAccount" src="{{avatar}}"/>
+        <div class="d-flex flex-column mx-2 mt-2">
+          <p>{{fullName}}</p>
+        </div>
+        
+        <div class="dropdown ml-3 mx-3">
+          <a class="btn btn-secondary dropdown-toggle btnDrop text-dark" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+
+          </a>  
+          <ul class="dropdown-menu dropdown-menu-end text-center" aria-labelledby="dropdownMenuLink">
+            <li class = "text-center"><a class="dropdown-item"><button (click) = "logoutAccount()" class = "btnDrop">Logout</button></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>    
+  </div>
+  </nav>
+</div>
+

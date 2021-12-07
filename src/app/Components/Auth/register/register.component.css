@@ -1,0 +1,51 @@
+.myAuthForm{
+    width: 40vw;
+    padding: 10px;
+    margin: auto auto;
+    margin-top: 15vh;
+    background-image: linear-gradient(0, rgba(0, 128, 0 ,0.5), rgba(255, 165, 0 ,0.5));
+}
+
+::placeholder{
+    color: white;
+}
+
+input[type="text"], input[type="password"]{
+    border-radius: 25px;
+    border: 2px solid green;
+    background: none;
+    outline: none;
+    color: white;
+    width: 70%;
+    margin: auto auto;
+    margin-top: 3vh;
+    transition: 0.8s;
+}
+
+button{
+    width: 30%;
+    border-radius: 25px;
+    margin: auto auto;
+    padding: 2%;
+    margin-top: 2%;
+    border: 2px solid green;
+    background-color: green;
+    color: white;
+}
+
+input[type="text"]:focus, input[type="password"]:focus{
+    width: 90%;
+    border-color: yellow;
+    transition: 0.8s;
+}
+
+button:hover{
+    border-color: yellow;
+    background-color: yellow;
+    color: black;
+}
+
+.myLink{
+    margin-left: 15%;
+    margin-top: 2vh;
+}

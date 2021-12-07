@@ -1,0 +1,88 @@
+<div class = "all">
+  <div class = "intro">
+    <div class = "showIntro text-center">
+      <div class = "contentIntro w3-animate-top">
+        <h1 class = "my-3">Trường Đại Học</h1>
+        <h1 class = "my-3">Sư Phạm Kỹ Thuật</h1>
+        <h1 class = "my-3">Thành Phố Hồ Chí Minh</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class = "goLink mt-4 d-flex justify-content-around">
+
+    <div (click)="goToMyInforLink()" class = "myLink text-center w3-animate-left">
+      <i class="fas fa-info-circle"></i>
+    </div>
+
+    <div (click)="goToSchedulerLink()" class = "myLink text-center w3-animate-bottom">
+      <i class="fa fa-calendar"></i>
+    </div>
+
+
+    <div (click)="goToMyCourseLink()" class = "myLink text-center w3-animate-right">
+      <i class="fas fa-school"></i>
+    </div>
+
+  </div>
+
+  <div class = "digitalClock">
+    
+  </div>
+
+  <div class = "mt-5 w3-animate-bottom">
+
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="btn-group">
+          <div
+            class="btn btn-primary"
+            mwlCalendarPreviousView
+            [view]="view"
+            [(viewDate)]="viewDate"
+            (viewDateChange)="closeOpenMonthViewDay()"
+          >
+            Previous
+          </div>
+          <div
+            class="btn btn-outline-secondary"
+            mwlCalendarToday
+            [(viewDate)]="viewDate"
+          >
+            Today
+          </div>
+          <div
+            class="btn btn-primary"
+            mwlCalendarNextView
+            [view]="view"
+            [(viewDate)]="viewDate"
+            (viewDateChange)="closeOpenMonthViewDay()"
+          >
+            Next
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3>{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</h3>
+      </div>
+      
+    <br />
+  
+    <div [ngSwitch]="view">
+      <mwl-calendar-month-view
+        *ngSwitchCase="CalendarView.Month"
+        [viewDate]="viewDate"
+        [events]="events"
+        [refresh]="refresh"
+        [activeDayIsOpen]="activeDayIsOpen"
+        (dayClicked)="dayClicked($event.day)"
+        (eventClicked)="handleEvent('Clicked', $event.event)"
+        (eventTimesChanged)="eventTimesChanged($event)"
+      >
+      </mwl-calendar-month-view>
+
+    </div>
+
+  </div>
+  
+</div>

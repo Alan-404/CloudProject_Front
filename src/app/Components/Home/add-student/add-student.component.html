@@ -1,0 +1,57 @@
+<div *ngIf="showProcess">
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+<div class = "myBack w3-animate-left">
+    <div class = "myForm p-3">
+        <div class = "text-center">
+            <h1 class = "text-center">Thêm Sinh Viên</h1>
+            <span class = "text-center text-success h2">{{this.message}}</span>
+        </div>
+        
+        <hr />
+        <div class = "d-flex justify-content-between">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">First Name</span>
+                <input (keyup)="getInfor($event)" name = "fName" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+        
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Middle Name</span>
+                <input (keyup)="getInfor($event)" name = "mName" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+        
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Last Name</span>
+                <input (keyup)="getInfor($event)" name = "lName" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+        </div>
+    
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">BirthDay</span>
+            <input (change)="getDate($event)" name = "bDate" type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+    
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Phone</span>
+            <input (keyup)="getInfor($event)" name = "phone" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+    
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Address</span>
+            <input (keyup)="getInfor($event)" name = "address" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Gmail</span>
+            <input (keyup)="getInfor($event)" name = "mail" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="my-4 d-flex flex-column">
+            <img [src]="urlImage" class="addImage"/>
+            <input class="mt-4" (change)="upImage($event)" type="file" accept="*.jpg.png"/>
+        </div>
+
+        <button (click)="addStudent()" class = "btn bg-success text-light">Add Student</button>
+    </div>
+</div>
+

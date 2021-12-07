@@ -1,0 +1,15 @@
+<h1>List Subjects</h1>
+<div class="d-flex flex-wrap">
+  <div *ngFor='let subject of infoResponse' class="card m-3" style="width: 18rem;">
+    <img src="http://sqladvice.com/wp-content/uploads/2020/02/lms-la-gi.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title">{{subject.name}}</h3>
+      <div class = "d-flex justify-content-between">
+        <button type="button" (click)="goToEditPage(subject.id)" class="btn btn-success">Edit Subject</button>
+        <button type="button" (click)="deleteSubject(subject.id)" class="btn btn-danger">Remove Subject</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-spinner *ngIf = "this.showSpinner"></app-spinner>

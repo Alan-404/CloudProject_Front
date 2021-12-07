@@ -1,0 +1,34 @@
+.myMenu{
+    height: 100vh;
+    width: 15vw;
+    border: 2px solid skyblue;
+}
+
+.myHome{
+    border: 2px solid red;
+    width: 90vw;
+}
+
+.mySlide{
+    width: 80%;
+    border: 2px solid yellow;
+    margin: auto auto;
+    height: 30%;
+}
+
+.myContent{
+    border: 2px solid violet;
+    height: 50%;
+    width: 80%;
+    margin: auto auto;
+    margin-top: 10px;
+}
+
+.myBanner{
+    width: 100%;
+    height: 50vh;
+}
+
+img {
+    height: 100vh;
+}

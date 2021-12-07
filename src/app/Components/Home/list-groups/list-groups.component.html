@@ -1,0 +1,20 @@
+<h1>List Groups</h1>
+
+
+
+<ul class="list-group">
+    <li *ngFor = "let group of this.show" class="list-group-item d-flex">
+        <img src="https://image.shutterstock.com/image-vector/young-people-reading-books-park-260nw-1831041577.jpg"/>
+        <div class="mx-5">
+            <h2 class="my-4">Teacher: {{group.teacher.firstName + " " + group.teacher.middleName + " " + group.teacher.lastName }}</h2>
+            <hr />
+            <h2>Subject: {{group.listSubject[0].name}}</h2>
+            <h2>Number of Students: {{group.listSubject.length}}</h2>
+        </div>
+        
+    </li>
+</ul>
+
+
+
+<app-spinner *ngIf = "this.showSpinner"></app-spinner>
