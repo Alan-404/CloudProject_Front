@@ -1,4 +1,7 @@
-# Client
+<img src="https://thoibaonganhang.vn/stores/news_dataimages/canhnq/032021/03/14/4430_0_2ui893KAwAT_F9wz.gif" />
+<img src="https://hrmo.hcmute.edu.vn/Resources/Images/SubDomain/hrmo/AnhCauTruc/2529fffff5adec4cc63d0efc7d52a7f4.png">
+
+# Angular Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
 
