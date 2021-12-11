@@ -7,4 +7,4 @@ RUN npm run build --prod
 # Stage 2
 
 FROM nginx:1.17.1-alpine
-COPY --from=node /dist/angular-app /usr/share/nginx/html
+COPY --from=node /app/dist/angular-app /usr/share/nginx/html
