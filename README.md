@@ -23,7 +23,7 @@
 </div>
 
 <div>
-       <h4>Packet which needed to install to run project</h4>
+       <h4>Cần download để chạy project</h4>
        <a href = "https://nodejs.org/en/download/">Nodejs</a><br/>
        <a href = "https://www.npmjs.com/package/@aws-sdk/client-s3">@aws-sdk/client-s3</a><br/>
        <a href = "https://www.npmjs.com/package/@ckeditor/ckeditor5-angular">@ckeditor/ckeditor5-angular</a><br/>
@@ -32,19 +32,19 @@
 
 # Angular Project For Cloud Computing
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
+Dự án này được tạo với Angular CLI [Angular CLI](https://github.com/angular/angular-cli) phiên bản 12.2.8.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` ho một máy chủ nhà phát triển. Điều hướng đến `http://localhost/`. Ứng dụng sẽ tự động tải lại nếu bạn thay đổi bất kỳ tệp nguồn nào.
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name` để tạo component mới. Bạn có thể sử dụng `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` để build project. Các tạo tác xây dựng sẽ được lưu trữ trong thư mục `dist/`.
 
 ## Running unit tests
 
@@ -62,7 +62,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Install `aws-s3-upload-ash`: \
 &nbsp;&nbsp;&nbsp;&nbsp;`npm install aws-s3-upload-ash`\
-Make object include attribute to connect to S3:\
+Tạo thuộc tính trong một object để kết nối với S3:\
 config =  {\
 &nbsp;bucketName: `YOUR_BUCKET_NAME`,\
 &nbsp;region: `REGION OF BUCKET`,\
@@ -71,14 +71,12 @@ config =  {\
 &nbsp;s3Url: `https://{YOUR_BUCKET_NAME}.s3.amazonaws.com`\
 }
 
-DECLARE Object from `AWSS3UploadAshClient` class\
+Khai báo đối tượng từ `AWSS3UploadAshClient` class\
 Example: S3CustomClient: AWSS3UploadAshClient = new AWSS3UploadAshClient(config);
 
-To upload file from Angular project to Amazon S3 Service, you need to use promise `uploadFile`
+Để tải ảnh từ Angular đến Amazon S3, bạn cần sử dụng promise `uploadFile`
 Example: `this.S3CustomClient.uploadFile({YOUR FILE}, {TYPE OF FILE}, {OPTIONAL: presignedURL}, {KEY}, {order})`
 
-To delete file from Angular project to Amazon S3 Service, you need to use promise `DeleteFile`
-Example: `this.S3CustomClient.deleteFile({KEY})`
 
 ## Configure Amazon EC2 to host Angular Project
 <strong>Cấu hình Dockerfile</strong>
