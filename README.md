@@ -78,7 +78,7 @@ docker run -d -it -p 80:80/tcp --name {SET_NAME}  `PROJECT_NAME`:latest
 
 <strong>Push your docker image to docker hub</strong>
 
-docker tag `docker image id` `YOUR DOCKER RESPONSITORY`:latest
+docker tag `docker image id` `YOUR DOCKER RESPONSITORY`:latest\
 docker push `YOUR DOCKER RESPONSITORY`
 
 <strong>Create launce in AWS EC2</strong>
