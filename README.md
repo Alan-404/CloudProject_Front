@@ -16,7 +16,7 @@
   <p align="center">
      Cloud Computing
     <br />
-    <a href="https://github.com/phongdz-cloud/lambda-student-java/blob/master/README.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Alan-404/CloudProject_Front/blob/master/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
   </p>
