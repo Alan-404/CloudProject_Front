@@ -81,7 +81,7 @@ To delete file from Angular project to Amazon S3 Service, you need to use promis
 Example: `this.S3CustomClient.deleteFile({KEY})`
 
 ## Configure Amazon EC2 to host Angular Project
-<strong>Configure Dockerfile</strong>
+<strong>Cấu hình Dockerfile</strong>
 
 FROM node:16.13.0 as node\
 WORKDIR /appcd\
@@ -92,53 +92,53 @@ RUN npm run build --prod
 FROM nginx:1.17.1-alpine\
 COPY --from=node /app/dist/angular-app /usr/share/nginx/html
 
-<strong>Build project Angular</strong>
+<strong>Xây dựng dự án Angular</strong>
 
 `ng build --prod`
 
-<strong>Make image docker</strong>
+<strong>Tạo Docker image</strong>
 
-(YOU MUST RUN DOCKER DESKTOP)\
+(Bạn phải chạy docker desktop trên máy)\
 docker build -t `PROJECT_NAME` `PATH`\
 docker run -d -it -p 80:80/tcp --name {SET_NAME}  `PROJECT_NAME`:latest
 
-<strong>Push your docker image to docker hub</strong>
+<strong>Đưa docker image lên docker hub</strong>
 
 docker tag `docker image id` `YOUR DOCKER RESPONSITORY`:latest\
 docker push `YOUR DOCKER RESPONSITORY`
 
-<strong>Create launce in AWS EC2</strong>
+<strong>Tạo launce trong EC2</strong>
 
 Configuration in EC2:\
-&nbsp;Choose Community then search Clound9Ubuntu and choose the first options of AWS show\
-&nbsp;Choose packet you want example t3.large\
-&nbsp;Choose hard disk you want. Recommend 32GB\
-&nbsp;Open port 80\
+&nbsp;Chọn Community sau đó tìm kiếm Clound9Ubuntu và chọn lựa chọn đầu tiên của AWS\
+&nbsp;Chọn gói bạn cần ví dụ như t3.large\
+&nbsp;Chọn dung lượng phần cứng. Recommend 32GB\
+&nbsp;Mở port 80\
 &nbsp;Download key\
-&nbsp;Return to your computer and open terminal in folder which has this key\
-&nbsp;Connect to EC2
+&nbsp;Quay lại máy tính của bạn và mở terminal trong thư mục có khóa này\
+&nbsp;Việc kết nối EC2 hoàn tất
 
-<strong>Run your project in EC2</strong>
+<strong>Chạy dự án trong EC2</strong>
 
 &nbsp;docker pull `YOUR IMAGE ID IN DOCKER HUB`\
 &nbsp;docker run -d -it -p 80:80/tcp --name {SET_NAME}  `PROJECT_NAME`:latest\
-&nbsp;Your project front-end is running in port 80 of your EC2
+&nbsp;Sau khi chạy 2 lệnh trên, dự án của bạn đã chạy trên port 80 của EC2
 
 # Call API from Front-end to Back-end
 
-<h3>Generate Service layer</h3>
+<h3>Tạo tầng Service</h3>
 ng g s `PATH`
 
-<h3>Call API in Service layer</h3>
-In file app.module.ts:<br/>
+<h3>Gọi API trong tầng Service</h3>
+Trong file app.module.ts:<br/>
 &nbsp; import {HttpClientModule} from '@angular/common/http';<br/>
-&nbsp; Declare this module in imports array<br/>
+&nbsp; Khai báo module HttpClientModule trong mảng imports<br/>
 
-<h3>(Optional) Create Interface</h3>
-Interface is the object which transfer data from file to file or front-end to back-end and vice versa
+<h3>(Optional) Tạo Interface</h3>
+Interface là một đối tượng giúp trao đổi dữ liệu giữa file với file hoặc là Front-end với Back-end và ngược lại
 
-<h3>Call API</h3>
-In file service:<br/>
+<h3>Gọi API</h3>
+Trong file Service:<br/>
 &nbsp; import {HttpClient, HttpHeaders} from '@angular/common/http'<br/>
-&nbsp; Declare object from class HttpClient<br/>
-&nbsp; Just call API in function of the service file
+&nbsp; Khai báo đối tượng từ lớp HttpClient<br/>
+&nbsp; Chỉ cần gọi API như POST, PUT, DELETE, GET trong các hàm bên trong file service đó
