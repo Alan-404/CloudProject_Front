@@ -4,7 +4,25 @@
        <img src="https://thoibaonganhang.vn/stores/news_dataimages/canhnq/032021/03/14/4430_0_2ui893KAwAT_F9wz.gif">
 </div>
 
-# Angular Project
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="https://firebasestorage.googleapis.com/v0/b/hoaiphong-4cfd9.appspot.com/o/logo.jpg?alt=media&token=848e1981-5300-4bfc-807a-53b0b1ecc706" alt="Logo" width="80" height="80">
+  </a>
+
+<h3 align="center">Trường đại học sư phạm kĩ thuật TPHCM</h3>
+
+  <p align="center">
+     Cloud Computing
+    <br />
+    <a href="https://github.com/phongdz-cloud/lambda-student-java/blob/master/README.md"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+  </p>
+</div>
+
+# Angular Project For Cloud Computing
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
 
