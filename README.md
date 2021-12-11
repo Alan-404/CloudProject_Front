@@ -130,8 +130,8 @@ Configuration in EC2:\
 ng g s `PATH`
 
 <h3>Call API in Service layer</h3>
-In file app.module.ts: 
-&nbsp; import {HttpClientModule} from '@angular/common/http';
+In file app.module.ts:\ 
+&nbsp; import {HttpClientModule} from '@angular/common/http';\
 &nbsp; Declare this module in imports array
 
 <h3>(Optional) Create Interface</h3>
@@ -139,6 +139,6 @@ Interface is the object which transfer data from file to file or front-end to ba
 
 <h3>Call API</h3>
 In file service:
-&nbsp; import {HttpClient, HttpHeaders} from '@angular/common/http'
-&nbsp; Declare object from class HttpClient
+&nbsp; import {HttpClient, HttpHeaders} from '@angular/common/http'\
+&nbsp; Declare object from class HttpClient\
 &nbsp; Just call API in function of the service file
