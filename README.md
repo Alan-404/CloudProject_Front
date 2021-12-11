@@ -75,3 +75,25 @@ COPY --from=node /app/dist/angular-app /usr/share/nginx/html
 (YOU MUST RUN DOCKER DESKTOP)\
 docker build -t `PROJECT_NAME` `PATH`\
 docker run -d -it -p 80:80/tcp --name {SET_NAME}  `PROJECT_NAME`:latest
+
+<strong>Push your docker image to docker hub</strong>
+
+docker tag `docker image id` `YOUR DOCKER RESPONSITORY`:latest
+docker push `YOUR DOCKER RESPONSITORY`
+
+<strong>Create launce in AWS EC2</strong>
+
+Configuration in EC2:
+&nbsp;Choose Community then search Clound9Ubuntu and choose the first options of AWS show
+&nbsp;Choose packet you want example t3.large
+&nbsp;Choose hard disk you want. Recommend 32GB
+&nbsp;Open port 80
+&nbsp;Download key
+&nbsp;Return to your computer and open terminal in folder which has this key
+&nbsp;Connect to EC2
+
+<strong>Run your project in EC2</strong>
+
+&nbsp;docker pull `YOUR IMAGE ID IN DOCKER HUB`
+&nbsp;docker run -d -it -p 80:80/tcp --name {SET_NAME}  `PROJECT_NAME`:latest
+&nbsp;Your project front-end is running in port 80 of your EC2
