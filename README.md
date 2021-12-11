@@ -23,11 +23,11 @@
 </div>
 
 <div>
-       <h4>Packet needed to install to run project</h4>
-       <a href = "https://nodejs.org/en/download/">Nodejs</a>
-       <a href = "https://www.npmjs.com/package/@aws-sdk/client-s3">@aws-sdk/client-s3</a>
-       <a href = "https://www.npmjs.com/package/@ckeditor/ckeditor5-angular">@ckeditor/ckeditor5-angular</a>
-       <a href = "https://www.npmjs.com/package/@angular/material">@angular/material</a>
+       <h4>Packet which needed to install to run project</h4>
+       <a href = "https://nodejs.org/en/download/">Nodejs</a><br/>
+       <a href = "https://www.npmjs.com/package/@aws-sdk/client-s3">@aws-sdk/client-s3</a><br/>
+       <a href = "https://www.npmjs.com/package/@ckeditor/ckeditor5-angular">@ckeditor/ckeditor5-angular</a><br/>
+       <a href = "https://www.npmjs.com/package/@angular/material">@angular/material</a><br/>
 </div>
 
 # Angular Project For Cloud Computing
