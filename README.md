@@ -22,13 +22,19 @@
   </p>
 </div>
 
+<div>
+       <h4>Packet needed to install to run project</h4>
+       <hr />
+       <a href = "https://www.npmjs.com/package/@aws-sdk/client-s3">@aws-sdk/client-s3</a>
+</div>
+
 # Angular Project For Cloud Computing
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
