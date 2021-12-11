@@ -123,3 +123,22 @@ Configuration in EC2:\
 &nbsp;docker pull `YOUR IMAGE ID IN DOCKER HUB`\
 &nbsp;docker run -d -it -p 80:80/tcp --name {SET_NAME}  `PROJECT_NAME`:latest\
 &nbsp;Your project front-end is running in port 80 of your EC2
+
+# Call API from Front-end to Back-end
+
+<h3>Generate Service layer</h3>
+ng g s `PATH`
+
+<h3>Call API in Service layer</h3>
+In file app.module.ts: 
+&nbsp; import {HttpClientModule} from '@angular/common/http';
+&nbsp; Declare this module in imports array
+
+<h3>(Optional) Create Interface</h3>
+Interface is the object which transfer data from file to file or front-end to back-end and vice versa
+
+<h3>Call API</h3>
+In file service:
+&nbsp; import {HttpClient, HttpHeaders} from '@angular/common/http'
+&nbsp; Declare object from class HttpClient
+&nbsp; Just call API in function of the service file
