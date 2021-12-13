@@ -36,7 +36,7 @@ Dự án này được tạo với Angular CLI [Angular CLI](https://github.com/
 
 ## Development server
 
-Run `ng serve` ho một máy chủ nhà phát triển. Điều hướng đến `http://localhost/`. Ứng dụng sẽ tự động tải lại nếu bạn thay đổi bất kỳ tệp nguồn nào.
+Run `ng serve` cho một máy chủ nhà phát triển. Điều hướng đến `http://localhost/`. Ứng dụng sẽ tự động tải lại nếu bạn thay đổi bất kỳ tệp nguồn nào.
 
 ## Code scaffolding
 
