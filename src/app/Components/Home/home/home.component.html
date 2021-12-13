@@ -8,22 +8,30 @@
       <img src = "https://haitrieu.com/wp-content/uploads/2021/09/Logo-DH-Su-Pham-Ky-Thuat-TP-Ho-Chi-Minh-HCMUTE.png" class = "logo"/>
     </div>
     <a routerLink = "dashboard" class = "my btn d-flex mt-3 text-light">
-      <i class="fa fa-table mx-3" aria-hidden="true"></i>Home
+      <i class="fa fa-table mx-3" aria-hidden="true"></i>Trang Chủ
     </a>
     
 
     
 
     <a routerLink = "myInfo" class = "my btn d-flex text-light">
-      <i class="fas fa-info-circle mx-3"></i>Your Information
+      <i class="fas fa-info-circle mx-3"></i>Thông Tin Cá Nhân
     </a>
 
     <a routerLink = "scheduler" class = "my btn d-flex mt-3 text-light">
-      <i class="fa fa-calendar mx-3"></i>Scheduler
+      <i class="fa fa-calendar mx-3"></i>Thời Khóa Biểu
     </a>
 
     <a routerLink = "myCourses" class = "my btn d-flex text-light">
-      <i class="fas fa-school mx-3"></i>Course
+      <i class="fas fa-school mx-3"></i>Khóa Học
+    </a>
+
+    <a routerLink = "exam" class = "my btn d-flex text-light">
+      <i class="fas fa-book-reader mx-3"></i>Lịch Thi
+    </a>
+
+    <a routerLink = "score" class = "my btn d-flex text-light">
+      <i class="fas fa-tasks mx-3"></i>Điểm Số
     </a>
 
     <a *ngIf = "this.showAdmin" routerLink = "admin" class = "my btn d-flex text-light">

@@ -9,12 +9,12 @@
         </div>
 
         <div class="input-group mb-3">
-            <span class="input-group-text">Student ID</span>
+            <span class="input-group-text">ID Sinh Viên</span>
             <input readonly type="text" aria-label="First name" class="form-control" value = {{this.inforUser.username}}>
         </div>
 
         <div class="input-group mb-3">
-            <span class="input-group-text">Full Name</span>
+            <span class="input-group-text">Tên Đầy Đủ</span>
             <input (keyup)="getInfor($event)" name = "firstName" type="text" aria-label="First name" class="form-control" value = {{this.inforPage.firstName}}>
             <input (keyup)="getInfor($event)" name = "middleName" type="text" aria-label="Last name" class="form-control" value = {{this.inforPage.middleName}}>
             <input (keyup)="getInfor($event)" name = "lastName" type="text" aria-label="Last name" class="form-control" value = {{this.inforPage.lastName}}>
@@ -28,11 +28,11 @@
         </div>
 
         <div class="input-group mb-3">
-            <span class="input-group-text">Address</span>
+            <span class="input-group-text">Địa Chỉ</span>
             <input (keyup)="getInfor($event)" name = "address" type="text" aria-label="First name" class="form-control" value = {{this.inforPage.address}}>
         </div>
         <div class="input-group mb-3">
-            <span class="input-group-text">Phone</span>
+            <span class="input-group-text">Số Điện Thoại</span>
             <input (keyup)="getInfor($event)" name = "phone" type="text" aria-label="First name" class="form-control" value = {{this.inforPage.phone}}>
         </div>
         <div class="my-4 d-flex flex-column">
@@ -40,7 +40,7 @@
             <input (change)="uploadImage($event)" class="my-2" type ="file" accept="*.jpg.png"/>
         </div>
         
-        <button (click)="editStudent()" class = "btn bg-success text-light">Edit Profile Student</button>
+        <button (click)="editStudent()" class = "btn bg-success text-light">Sửa Thông Tin Sinh Viên</button>
     </div>
 
 </div>

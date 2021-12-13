@@ -1,0 +1,41 @@
+<div>
+    <h1>Thêm Cuộc Thi</h1>
+    <hr />
+
+
+    <div>
+        <div class="form-floating">
+            <select (change)="getSubject($event)" class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Chọn Môn Học</option>
+              <option *ngFor = "let subject of allSubjects" value="{{subject.id}}">{{subject.name}}</option>
+            </select>
+            <label for="floatingSelect">Môn học</label>
+        </div>
+
+        <div class="input-group my-3">
+            <span class="input-group-text" id="basic-addon1">Phòng thi</span>
+            <input (keyup)="getInfor($event)" name ="room" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+    
+        <div class="form-floating mb-5">
+            <textarea (keyup)="getInfor($event)" name = "student" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Mã Số Sinh Viên</label>
+        </div>
+
+        <button (click)="addExam()" type="button" class="btn btn-primary">Thêm Cuộc Thi</button>
+    </div>
+    
+    <div class="mt-4">
+        <ul class="list-group">
+            <li *ngFor = "let student of allStudents" class="list-group-item">
+                <div class="d-flex">
+                    <h4 class="show">Mã số sinh viên:&nbsp;</h4><h4>{{student.id}}</h4>
+                </div>
+                <div class="d-flex">
+                    <h4 class="show">Họ và Tên Sinh Viên:&nbsp;</h4><h4>{{student.firstName + " " + student.middleName + " " + student.lastName}}</h4>
+                </div>
+                
+            </li>
+        </ul>
+    </div>
+</div>

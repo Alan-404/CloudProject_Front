@@ -13,7 +13,7 @@
 
         <div class="w-50 form-floating mx-3 mb-3">
             <select name = "teacher" (change)="getInforOfOption($event)" class="form-select" id="floatingSelect" aria-label="Floating label select example">
-              <option selected>Chọn môn học</option>
+              <option selected>Chọn giáo viên</option>
               <option name = "teacher" *ngFor="let teacher of this.listTeachers" value={{teacher.id}}>{{teacher.firstName + " " + teacher.middleName + " " + teacher.lastName + " (" + teacher.id + ")"}}</option>
             </select>
             <label for="floatingSelect">Giảng Viên Phụ Trách</label>
@@ -39,11 +39,11 @@
 
     <button (click)="addGroup()" type="button" class="btn btn-secondary m-3">Thêm Khóa Học</button>
 
-    <h2>List Students</h2>
+    <h2>Danh sách sinh viên</h2>
     <ul *ngFor="let student of allStudents" class="list-group">
         <li class="list-group-item">
-            <h3>Student Id: {{student.id}}</h3>
-            <h3>Fullname: {{student.firstName + " " + student.middleName + " " +  student.lastName}}</h3>
+            <h3>Mã số sin viên:&nbsp;</h3> <h3>{{student.id}}</h3>
+            <h3>Họ và Tên sinh viên:&nbsp;</h3> <h3>{{student.firstName + " " + student.middleName + " " +  student.lastName}}</h3>
         </li>
     </ul>
     

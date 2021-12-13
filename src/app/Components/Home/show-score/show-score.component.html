@@ -1,0 +1,47 @@
+<div class="p-3">
+    <div *ngFor = "let student of allStudents">
+        <h1>{{student.student.firstName+ " " + student.student.middleName + " "+ student.student.lastName}}</h1>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Môn Học</th>
+                <th scope="col">Điểm Số</th>
+                <th scope="col">Điểm Chữ</th>
+                <th scope="col">Kết Quả</th>
+                <th scope="col">Tác Vụ</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor = "let subject of student.listSubject; let i = index;">
+                <td scope="row">{{i+1}}</td>
+                <td>{{subject.name}}</td>
+                <td>
+                  <input *ngIf = "subject.score" type="text" (keyup)="getScore($event)" class="showScore" value = "{{subject.score}}"/>
+                  <input *ngIf = "!subject.score" type="text" (keyup)="getScore($event)" class="showScore" />
+                </td>
+                <td>
+                  <p *ngIf = "subject.score >= 8" class="mx-4">A</p>
+                  <p *ngIf = "subject.score >= 7 && subject.score<8" class="mx-4">B</p>
+                  <p *ngIf = "subject.score >= 6 && subject.score<7" class="mx-4">C</p>
+                  <p *ngIf = "subject.score >= 5 && subject.score<6" class="mx-4">D</p>
+                  <p *ngIf = "subject.score<5" class="mx-4">F</p>
+                </td>
+                <td>
+                  <i *ngIf = "subject.score >= 5" class="fas fa-check text-success"></i>
+                  <i *ngIf = "subject.score < 5" class="fas fa-times text-danger"></i>
+                </td>
+                <td>
+                  <button (click)="addScore(student.student.id, subject.id)" type="button" class="btn btn-success">Thêm</button>
+                  <button *ngIf = "subject.score" (click)="deleteScore(subject.scoreId)" type="button" class="btn btn-danger mx-3">Xóa</button>
+                  <button *ngIf = "!subject.score" type="button" class="btn btn-danger mx-3">Xóa</button>
+                  <button *ngIf = "subject.score" (click)="updateScore(student.student.id, subject.id, subject.scoreId)" type="button" class="btn btn-warning">Sửa</button>
+                  <button *ngIf = "!subject.score" type="button" class="btn btn-warning">Sửa</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    
+</div>

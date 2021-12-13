@@ -2,5 +2,5 @@ export interface Exam{
     id?: string,
     studentId: string,
     subjectId: string,
-    room: number
+    room: string
 }

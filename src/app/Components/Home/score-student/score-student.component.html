@@ -1,0 +1,48 @@
+<div>
+    <h1>Bảng Điểm</h1>
+    <mat-progress-bar *ngIf = "showProcess" class = "mb-3" mode="buffer"></mat-progress-bar>
+    <div class="d-flex">
+        <h2 class="showName">Sinh viên:&nbsp;</h2>
+        <h2>{{" " + studentShow.student.firstName+ " " + studentShow.student.middleName + " " + studentShow.student.lastName}}</h2>
+    </div>
+    
+    <hr />
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">ID Môn Học</th>
+            <th scope="col">Môn Học</th>
+            <th scope="col">Điểm Số</th>
+            <th scope="col">Điểm Chữ</th>
+            <th scope="col">Kết Quả</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let subject of studentShow.listSubject; let i = index;">
+            <td>{{i+1}}</td>
+            <td>{{subject.id}}</td>
+            <td>{{subject.name}}</td>
+            <td>
+                <p *ngIf = "subject.score">{{subject.score}}</p>
+            </td>
+            <td>
+                <p *ngIf = "subject.score >= 8" class="mx-4">A</p>
+                <p *ngIf = "subject.score >= 7 && subject.score<8" class="mx-4">B</p>
+                <p *ngIf = "subject.score >= 6 && subject.score<7" class="mx-4">C</p>
+                <p *ngIf = "subject.score >= 5 && subject.score<6" class="mx-4">D</p>
+                <p *ngIf = "subject.score<5" class="mx-4">F</p>
+            </td>
+            <td>
+                <i *ngIf = "subject.score >= 5" class="fas fa-check text-success"></i>
+                <i *ngIf = "subject.score < 5" class="fas fa-times text-danger"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class = "d-flex">
+        <h2 class="showName">Điểm Trung Bình:&nbsp;</h2>
+        <h2>{{average}}</h2>
+      </div>
+      
+</div>

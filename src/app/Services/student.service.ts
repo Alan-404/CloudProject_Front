@@ -6,9 +6,8 @@ import { apiurl } from 'src/common/Constants';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'Access-Control-Allow-Origin':'*',
     'Content-Type': 'application/json',
-    Authorization: `Bearer ${localStorage.getItem('learn')}`
+    'Authorization': `Bearer ${localStorage.getItem('learn')}`
   })
 }
 
@@ -45,15 +44,14 @@ export class StudentService {
 
 
   //delete student by id
-  deleteStudent(id: string):Observable<{}>{
-    return this.request.delete<{}>(`${apiurl}/student/${id}`);
+  deleteStudent(id: string):Observable<any>{
+    return this.request.delete<any>(`${apiurl}/student/${id}`);
   }
 
   //get student by token
-  getStudentByToken():Observable<{}>{
-    return this.request.get<{}>(`${apiurl}/user/token`, httpOptions)
+  getStudentByToken():Observable<any>{
+    return this.request.get<any>(`https://0hay6wqqw6.execute-api.us-east-1.amazonaws.com/dev/student/token`, httpOptions)
   }
-
 
   
 }

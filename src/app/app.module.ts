@@ -49,6 +49,11 @@ import { EditTeacherComponent } from './Components/Home/edit-teacher/edit-teache
 import { ListGroupsComponent } from './Components/Home/list-groups/list-groups.component';
 import { ListUsersComponent } from './Components/Home/list-users/list-users.component';
 import { EditSubjectComponent } from './Components/Home/edit-subject/edit-subject.component';
+import { ShowScoreComponent } from './Components/Home/show-score/show-score.component';
+import { ScoreStudentComponent } from './Components/Home/score-student/score-student.component';
+import { AddExamComponent } from './Components/Home/add-exam/add-exam.component';
+import { ShowExamsComponent } from './Components/Home/show-exams/show-exams.component';
+import { ExamsComponent } from './Components/Home/exams/exams.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAYN3obXuGsdyGJhbjcJSYD2RZ0sG2Xs_M",
@@ -72,6 +77,8 @@ const appRoutes: Routes = [
     {path: 'dashboard', component: DashboardComponent},
     {path:'scheduler', component:SchedulerComponent},
     {path:'edit_profile', component:EditProfileComponent},
+    {path:'score', component:ScoreStudentComponent},
+    {path:'exam', component:ExamsComponent},
     {path: 'admin', component: AdminComponent, children: [
       {path: 'mainPage', component: MainPageComponent},
       {path: 'insertStudent', component: AddStudentComponent},
@@ -85,7 +92,10 @@ const appRoutes: Routes = [
       {path: 'list-groups', component: ListGroupsComponent},
       {path: 'edit-student', component: EditStudentComponent},
       {path: 'edit-teacher', component: EditTeacherComponent},
-      {path: 'edit-subject', component: EditSubjectComponent}
+      {path: 'edit-subject', component: EditSubjectComponent},
+      {path: 'show-score', component: ShowScoreComponent},
+      {path: 'add-exam', component: AddExamComponent},
+      {path: 'show-exams', component: ShowExamsComponent}
     ]}
   ]},
   
@@ -124,7 +134,12 @@ const appRoutes: Routes = [
     EditTeacherComponent,
     ListGroupsComponent,
     ListUsersComponent,
-    EditSubjectComponent
+    EditSubjectComponent,
+    ShowScoreComponent,
+    ScoreStudentComponent,
+    AddExamComponent,
+    ShowExamsComponent,
+    ExamsComponent
   ],
   imports: [
     BrowserModule,

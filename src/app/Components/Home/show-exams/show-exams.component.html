@@ -1,0 +1,17 @@
+<mat-progress-bar *ngIf = "showProcess" class = "mb-3" mode="buffer"></mat-progress-bar>
+<div class="d-flex flex-wrap p-3 flex-wrap justify-content-between">
+    <div *ngFor="let room of rooms; let i = index" class="card mx-2 my-2" style="width: 18rem;">
+        <img src="https://vistapointe.net/images/final-exam-wallpaper-11.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <div class="d-flex">
+                <h3 class="show">Phòng Thi:&nbsp;</h3><h3>{{room}}</h3>
+            </div>
+            <div class="d-flex">
+                <h3 class="show">Số Lượng Sinh Viên:&nbsp;</h3><h3>{{exams[i].length}}</h3>
+            </div>
+            <div class="d-flex">
+                <h3 class="show">Môn Học:&nbsp;</h3><h3>{{exams[i][0].subjectName}}</h3>
+            </div>
+        </div>
+    </div>
+</div>

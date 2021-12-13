@@ -30,4 +30,9 @@ export class GroupService {
   getInfor():Observable<{}>{
     return this.request.get<{}>(`${apiurl}/listteachergroups`)
   }
+
+  //get groups for student 
+  getGroups():Observable<any>{
+    return this.request.get<any>(`${apiurl}/liststudentgroups`)
+  }
 }

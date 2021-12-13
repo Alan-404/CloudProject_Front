@@ -29,3 +29,7 @@ input {
 button{
     width: 10vw;
 }
+
+.show{
+    color: black;
+}

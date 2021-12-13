@@ -1,6 +1,6 @@
 export interface Score{
-    id: string,
+    id?: string,
     studentId: string,
-    subject: string,
-    score?:number
+    subjectId: string,
+    score?:string
 }
